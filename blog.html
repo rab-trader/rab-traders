@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RAB TRADERS | BLOG</title>
+
+
+    <!--  Bootstrap css file  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+
+    <!--  Magnific Popup css file  -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
+
+    <!--  Owl-carousel css file  -->
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+        /* *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        } */
+/* 
+        body {
+            font-family: "Quicksand", sans-serif;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background: #7f7fd5;
+            background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+        } */
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin-block: 2rem;
+            gap: 2rem;
+        }
+
+        .card__image{
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        } 
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: clamp(20rem, calc(20rem + 2vw), 22rem);
+            overflow: hidden;
+            box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+            border-radius: 1em;
+            background: #ECE9E6;
+            background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+        }
+
+
+
+        .card__body {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+
+
+        .tag {
+            align-self: flex-start;
+            padding: .25em .75em;
+            border-radius: 1em;
+            font-size: .75rem;
+        }
+
+        .tag+.tag {
+            margin-left: .5em;
+        }
+
+        .tag-blue {
+            background: #56CCF2;
+            background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+            color: #fafafa;
+        }
+
+        .tag-brown {
+            background: #D1913C;
+            background: linear-gradient(to bottom, #FFD194, #D1913C);
+            color: #fafafa;
+        }
+
+        .tag-red {
+            background: #cb2d3e;
+            background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+            color: #fafafa;
+        }
+
+        .card__body h4 {
+            font-size: 1.5rem;
+            text-transform: capitalize;
+        }
+
+        .card__footer {
+            display: flex;
+            padding: 1rem;
+            margin-top: auto;
+        }
+
+        .user {
+            display: flex;
+            gap: .5rem;
+        }
+
+        .user__image {
+            border-radius: 50%;
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .user__info>small {
+            color: #666;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!--  ======================= Start Header Area ============================== -->
+
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="./img/logo1.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <li><a href="index.html">HOME</a></li> -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">services</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="blog.html">blog<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--  ======================= End Header Area ============================== -->
+
+    <!--  ======================= Start Main Area ================================ -->
+    <main class="site-main">
+
+        <div class="container">
+            <div class="card">
+                <div class="card__header">
+                    <img src="https://source.unsplash.com/600x400/?trading,charts" alt="card__image" class="card__image"
+                        width="600">
+                </div>
+                <div class="card__body">
+                    <span class="tag tag-blue">Nifty</span>
+                    <h4>What's new in 2023 Nifty</h4>
+                    <p>The NIFTY 50 is a benchmark Indian stock market index that represents the weighted average of 50 of the largest Indian companies listed on the National Stock Exchange. Nifty 50 is owned and managed by NSE Indices, which is a wholly owned subsidiary of the NSE Strategic Investment Corporation Limited</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <img src="https://source.unsplash.com/600x400/?graphs" alt="card__image" class="card__image"
+                        width="600">
+                </div>
+                <div class="card__body">
+                    <span class="tag tag-brown">Bank-Nifty</span>
+                    <h4>Bank-Nifty</h4>
+                    <p>The Bank Nifty index is calculated based on the market capitalization-weighted methodology, which means that the performance of larger banking companies has a more significant impact on the index's movements.
+
+                        The Bank Nifty index typically includes banking and financial companies such as commercial banks, private sector banks, public sector banks, and other financial institutions. It serves as a barometer of the overall health and performance of the banking sector in the Indian stock market.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <img src="https://source.unsplash.com/600x400/?stocks" alt="card__image" class="card__image"
+                        width="600">
+                </div>
+                <div class="card__body">
+                    <span class="tag tag-red">Reliance</span>
+                    <h4>Who is winning the race in market</h4>
+                    <p>Company's annual revenue growth of 24.43% outperformed its 3 year CAGR of 13.22%. (Source: Consolidated Financials)
+                        Company has spent 2.23% of its operating revenues towards interest expenses and 2.83% towards employee cost in the year ending 31 Mar, 2023. (Source: Consolidated Financials)
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+    <!--  ======================= End Main Area ================================ -->
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+                    <a href="#"><img src="./img/logo2.png" alt="logo"></a>
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    <a href="https://www.facebook.com/people/Rab-Trader/pfbid02WJmm3XBeBLM6qLavxRSZspQzGMXTbsX7383wa1jqdn58C9ZdxWV7ohmEA4TqcXgvl/"
+                        target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/rab_traders/?hl=en" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxY0Lm9ziITF-Jwh-Kbe9gQ" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Frab_traders" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2023 All rights reserved | This is made with by
+                        <a href="#"><span style="color: var(--primary-color);">Edition</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Jquery js file  -->
+    <script src="./js/jquery.3.4.1.js"></script>
+
+    <!--  Bootstrap js file  -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!--  isotope js library  -->
+    <script src="./vendor/isotope/isotope.min.js"></script>
+
+    <!--  Magnific popup script file  -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+
+    <!--  Owl-carousel js file  -->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
